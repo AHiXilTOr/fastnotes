@@ -8,3 +8,6 @@ passlib[bcrypt]
 python-jose[cryptography]
 
 cachetools
+
+pytest 
+pytest-asyncio

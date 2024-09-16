@@ -12,8 +12,8 @@ class TagCreate(TagBase):
 
 class Tag(TagBase):
     id: int
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attributes = True
 
 class NoteBase(BaseModel):
     title: str
@@ -33,8 +33,8 @@ class Note(NoteBase):
 
     tags: List[Tag] = []
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attributes = True
 
 # работа с пользователями
 
@@ -46,8 +46,8 @@ class UserCreate(UserBase):
 
 class User(UserBase):
     id: int
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attributes = True
 
 # для авторизации
 
