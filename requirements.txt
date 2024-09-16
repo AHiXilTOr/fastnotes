@@ -1,0 +1,10 @@
+aiohttp
+fastapi[all] 
+sqlalchemy 
+psycopg2-binary 
+pydantic
+
+passlib[bcrypt] 
+python-jose[cryptography]
+
+cachetools
