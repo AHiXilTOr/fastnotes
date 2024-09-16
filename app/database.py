@@ -5,7 +5,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker, Session
 from fastapi import Depends
 from typing import Annotated
 
-SQLALCHEMY_URL = "postgresql://postgres:123@localhost:5432/note_db"
+SQLALCHEMY_URL = "postgresql://postgres:123@db:5432/note_db"
 
 engine = create_engine(SQLALCHEMY_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
