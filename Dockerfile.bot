@@ -1,0 +1,9 @@
+FROM python:3.12.6
+
+WORKDIR /app
+
+RUN pip install --no-cache-dir aiogram==2.9
+
+COPY bot/ .
+
+CMD ["python", "main.py"]
